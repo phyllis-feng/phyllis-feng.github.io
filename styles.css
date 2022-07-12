@@ -1,0 +1,88 @@
+    
+body{
+    background-color: #fffbf3;
+}
+
+
+@media (min-width: 800px){
+
+    /* header */
+
+    header{
+        display: grid;
+        /* num of cols, line names, track size */
+        grid-template-columns: repeat(16, [col-start] 1fr); 
+        gap: 30px;
+        position: sticky;
+        top: 20px;
+
+    }
+
+
+    #HomeName{
+        grid-column: col-start 2 / span 4;
+        grid-row:  1;
+
+    }
+
+    #NavBar{
+        display: grid;
+        grid-column: 10 / 16;
+        grid-row: 1;
+        grid-template-columns: subgrid;
+
+    }
+
+    #WorkTab{
+        grid-column: col-start 4 / span 1;
+        grid-row: 1;
+    }
+
+    #AboutTab{
+        grid-column: col-start 6 / span 1;
+        grid-row: 1;
+    }
+
+    #ResumeTab{
+        grid-column: col-start 8 / span 1;
+        grid-row: 1;
+    }
+
+}
+
+/* home page intro */
+
+@media (min-width: 800px){
+
+    #Intro{
+        display: grid;
+        grid-template-columns: repeat(16, [col-start] 1fr); 
+        gap: 30px;
+    }
+
+    #Intro p{
+        font-size:2.7em;
+        grid-column: col-start 2 / span 9;
+        grid-row: 8/8;
+        line-height: 1.28;
+    }
+}
+
+/* work */
+
+#Work img{
+    width: 280px;
+}
+
+/* about */
+
+#About img{
+    width: 280px;
+}
+
+/* footer */
+
+footer img{
+    width: 20px;
+
+}

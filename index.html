@@ -1,1 +1,126 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head> <!-- title, metadata -->
+    <meta charset="utf-8" />
+    <meta name="author" content="Phyllis Feng">
+    <meta name="keywords" content="Phyllis Feng, Carnegie Mellon University, 
+    Designer">
+    <meta name="description" content="Phyllis Feng's Personal Website">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+
+    <title> Phyllis Feng </title>
+
+</head> 
+
+<body> <!-- grid -->
+    <header> <!-- child grid item / new grid parent-->
+        <h2 id="HomeName"><a href="#Home">PHYLLIS FENG</a></h2>
+        <nav id="NavBar">
+            <h2 id="WorkTab"><a href="#Work">Work</a></h2>
+            <h2 id="AboutTab"><a href="#About">About</a></h2>
+            <h2 id="ResumeTab"><a href="PhyllisFengResume.pdf" target="_blank">Resume</a></h2>
+        </nav>
+    </header>
+
+    <main> <!-- child grid item / flexbox parent -->
+        <div id="Intro"> <!-- grid -->
+            <p>Hi there, I’m Phyllis.<br>
+            A sophomore studying Information 
+            Systems at Carnegie Mellon University, 
+            I’m curious about how to design 
+            effortless, accessible products with bold 
+            personalities. Join me as I dive in — oh,
+            and wade through some code. 
+            </p>
+        </div>
+
+        <br><br><br><br><br>
+    
+        <div id="Work"> <!-- grid -->
+            <h1>Work</h1>
+            <img src="images/TLDRcover.png" alt = "" />
+            <img src="images/pamelasdinerCover.png" alt = "" />
+            <img src="images/falooda.png" alt = "" />
+            <img src="images/ninetofiveLogo.png" alt = "" />
+            <ul>
+                <li>TL;DR</li>
+                <p>Term project for Fundamentals of Programming and Computer Science</p>
+                <li>Pamela's Diner</li>
+                <p>Web Development Project for Information Systems Milieux</p>
+                <li>Big Straw Magazine</li>
+                <p>Article layouts designed for Big Straw Magazine</p>
+                <li>NineToFive</li>
+                <p>High fidelity wireframes for Information Systems Milieux</p>
+            </ul>
+        </div>
+
+        <br><br><br><br>
+
+        <div id="About"> <!-- grid -->
+            <h1>About</h1>
+            <p id="aboutSubheading"> My life in Pittsburgh, PA</p>
+            <div id="gallery">
+                <img id="selfie" src="images/selfie.jpg" alt = "" />
+                <img id="brunch" src="images/brunch.JPG" alt = "" />
+                <img id="incline" src="images/incline.jpg" alt = "" />
+                <img id="mural" src="images/mural.JPEG" alt = "" />
+                <img id="cupcake" src="images/cupcake.jpg" alt = "" />
+                <img id="apples" src="images/apples.jpg" alt = "" />
+                <img id="reflection" src="images/theframe.jpg" alt = "" />
+                <figure>
+                <img id="cat" src="images/cat.jpg" alt = "" />
+                <figcaption>Look closer — there’s a cat :)</figcaption>
+                </figure>
+            </div>
+            <br><br>
+            <h2>How I got here</h2>
+            <p>Born in Tallahassee, Florida, and raised in Dayton, Ohio, I grew up 
+                reading and writing with my head in the clouds. But while there 
+                was much magic to be found in books, I quickly became engaged 
+                with the magic in the world around me. As a layout designer for 
+                my school’s magazine, I learned how the confluence of typography, 
+                color, and structure could breathe life to an idea. As a student 
+                journalist, I learned how to amplify others' voices through my writing, 
+                while also elevating my own. <br><br>
+                My foray into technology started with good ol’ AP Computer Science 
+                Principles. Being a writer and a designer opened up many pathways 
+                for me to make a difference; in this course, I caught a glimpse of 
+                sprawling new pathways — doors opening into places where technology, 
+                design, and advocacy intersected. This led me to my major, Information 
+                Systems, which represents the kind of human-centric, forward-thinking 
+                work I’ve always wanted to pursue.</p>
+            <h2>What I'm up to now</h2>
+            <p>Currently, I’m a layout designer and writer for Carnegie Mellon’s 
+                sole Asian-focused publication, Big Straw Magazine, as well as a 
+                member of Women in IS. This summer, I’m busy with my client project 
+                at re:Bloom, app development for the delivery startup Nile, brushing 
+                up on some algorithms / data structures — and, of course, slogging 
+                through my never-ending reading list. <br> <br>
+                Speaking of books, I just finished A Tale for the Time Being by 
+                Ruth Ozeki! As for TV, I’ve been watching Moon Knight from the 
+                Marvel Universe — I have a soft spot for Egyptian mythology. </p>
+            <h2>Some favorite things</h2>
+            <p>Woodwick candles; boba and chai tea; visiting cat cafes; fluffy blankets; 
+                every pasta imaginable; spicy salmon rolls; cute brunch places; 
+                sunsets after storms; turning off the alarm; antics with friends; 
+                Song of Achilles by Madeline Miller.</p>
+        </div>
+    </main>
+
+    <br><br><br><br>
+
+    <footer>  <!-- child grid item / flexbox parent -->
+        <h3 id="contact">contact me here</h3>
+        <a id="emailLogo" href="mailto:pfeng@andrew.cmu.edu"><img src="images/email.png" alt=""/></a>
+        <a id="email" href="mailto:pfeng@andrew.cmu.edu">pfeng@andrew.cmu.edu</a>
+        <h3 id="socials">find me elsewhere</h3>
+        <a id="linkedInLogo" href="https://www.linkedin.com/in/phyllisfeng/" target="blank"><img src="images/linkedin.png" alt=""/></a>
+        <a id="linkedIn" href="https://www.linkedin.com/in/phyllisfeng/" target="blank">LinkedIn</a>
+        <a id="instagramLogo" href="https://www.instagram.com/phyllis.feng/?hl=en" target="blank"><img src="images/instagram.png" alt=""/></a>
+        <a id="instagram" href="https://www.instagram.com/phyllis.feng/?hl=en" target="blank">Instagram</a>
+
+    </footer>
+
+</body>
+
+</html>
