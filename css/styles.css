@@ -564,22 +564,31 @@ body{
 
 
 #aboutHeadings{
-    display: grid;
-    grid-template-columns: repeat(16, [col-start] 1fr); 
-    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 
 }
+
+@media (min-width: 701px) {
 
 #aboutHeadings h1{
-    grid-column: col-start 2 / span 2;
-    grid-row: 1 / 4;
+    padding-left: 3em;
 }
+
+}
+
+@media (max-width: 700px) {
+
+    #aboutHeadings h1{
+        padding-left: 2.2em;
+    }
+    
+    }
 
 
 #aboutHeadings p{
-    grid-column: col-start 13 / span 3;
-    grid-row: 3 / 6;
-    padding-left: 50px;
+    padding-top: 5em;
 }
 
 #gallery{
@@ -587,7 +596,7 @@ body{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 
