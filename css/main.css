@@ -3,23 +3,52 @@ body{
     background-color: #fffbf3;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
+
+
+a:link {
+    color: #434343;
+    text-decoration: none;
+  }
+  
+a:visited {
+    color: #434343;
+  }
+  
+  
+a:hover {
+    color: #a4c2f4;
+  }
+  
+a:active {
+    color: #a4c2f4;    ;
+  }
 
 
     /* header */
 
-    .sticky {
+.sticky {
         position: fixed;
         top: 0;
         width: 100%;
-    }
+}
 
-    @media (min-width: 701px) {
+#NavBar{
+    font-family: "Roboto Mono";
+    font-weight: bolder;
+
+}
+    
+
+
+    @media (min-width: 701px){
         #NavBar{
             background-color: #fffbf3;
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
+            padding-top: 2em;
 
         }
 
@@ -72,7 +101,13 @@ body{
 
 /* home page intro */
 
-@media (min-width: 701px) {
+#Home{
+    font-family: "EB Garamond";
+    font-weight: 100;
+    color: #434343;
+}
+
+@media (min-width: 2001px){
 
     #Home{
         display: flex;
@@ -83,15 +118,35 @@ body{
 
 
     #Home p{
-        font-size: 2.6em;
+        font-size: 3.5em;
         padding-left: 2em;
-        padding-right: 11em;
-        padding-top: 5.7em;
-        line-height: 1.29;
+        padding-right: 16.3em;
+        padding-top: 6.2em;
+        line-height: 1.20;
     }
 }
 
-@media (max-width: 700px) {
+
+@media (min-width: 800px) and (max-width: 2000px) {
+
+    #Home{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+    }
+
+
+    #Home p{
+        font-size: 2.8em;
+        padding-left: 2em;
+        padding-right: 12.3em;
+        padding-top: 4.2em;
+        line-height: 1.20;
+    }
+}
+
+@media (max-width: 799px) {
 
     #Home{
         display: flex;
@@ -106,14 +161,282 @@ body{
         padding-left: 2.2em;
         padding-right: 1em;
         padding-top: 2em;
-        line-height: 1.29;
+        line-height: 1.20;
     }
 }
 
 
 /* work */
 
-@media screen and (min-width: 1050px) {
+#Work h1{
+    font-family: "EB Garamond";
+    color:#434343;
+    font-size: 3.5em;
+    font-weight: normal;
+}
+
+#Work h2{
+    font-family: "EB Garamond";
+    color:#434343;
+    font-size: 2em;
+    font-weight: 100;
+    line-height: .3;
+}
+
+#Work p{
+    font-family: "Roboto Mono";
+    color:#434343;
+    font-size: 1em;
+    font-weight:100;
+}
+
+@media (min-width: 2001px) {
+
+    #Work{
+        display: grid;
+        grid-template-columns: repeat(16, [col-start] 1fr);
+        gap: 30px;
+    
+    }
+    
+    #Work h1{
+        grid-column: col-start 2 / span 5;
+        padding-left: 34px;
+    }
+    
+    #tldr{
+        grid-column: col-start 9 / span 7;
+        grid-row: 3 / 16;
+        padding-left: 2em;
+    
+    }
+    
+    #housebayou{
+        grid-column: col-start 9 / span 7;
+        grid-row: 6 / 16;
+        padding-left: 2em;
+    
+    }
+    
+    #pamelas{
+        grid-column: col-start 9 / span 7;
+        grid-row: 9 / 16;
+        padding-left: 2em;
+    
+    }
+    
+    #falooda{
+        grid-column: col-start 9 / span 7;
+        grid-row: 12 / 16;
+        padding-left: 2em;
+    
+    }
+
+    #tldrphoto {
+        grid-column: col-start 4 / span 3;
+        grid-row: 4 / 16;
+        display:none;
+        width: 500px;
+        height: 300px;
+        border-radius: 20px;
+    }
+    
+    #housebayouphoto{
+        grid-column: col-start 4 / span 3;
+        grid-row: 4 / 16;
+        display: none;
+        width: 500px;
+        height: 300px;
+        border-radius: 20px;
+    }
+    
+    
+    #pamelasphoto{
+        grid-column: col-start 4 / span 2;
+        grid-row: 4 / 16;
+        display: none;
+        width: 510px;
+        height: 300px;
+        border-radius: 20px;
+    }
+    
+    
+    #faloodaphoto{
+        grid-column: col-start 4 / span 3;
+        grid-row: 4 / 16;
+        display: none;
+        height: 300px;
+        width: 480px;
+        border-radius: 20px;
+    }
+    
+    
+    #pseudoTldr {
+        grid-column: col-start 3 / span 3;
+        grid-row: 4 / 16;
+        visibility: hidden;
+        width: 500px;
+        height: 300px;
+        border-radius: 20px;
+    
+    }
+    
+    #pseudoHouseBayou{
+        grid-column: col-start 3 / span 3;
+        grid-row: 4 / 16;
+        visibility: hidden;
+        width: 500px;
+        height: 300px;
+        border-radius: 20px;
+    }
+    
+    
+    #pseudoPamelas{
+        grid-column: col-start 3 / span 2;
+        grid-row: 4 / 16;
+        visibility: hidden;
+        width: 510px;
+        height: 300px;
+        border-radius: 20px;
+    }
+    
+    
+    #psuedoFalooda{
+        grid-column: col-start 3 / span 3;
+        grid-row: 3 / 16;
+        visibility: hidden;
+        height: 300px;
+        width: 480px;
+        border-radius: 20px;
+    }
+    
+   
+}
+
+@media (min-width: 1050px) and (max-width: 2000px) {
+
+#Work{
+    display: grid;
+    grid-template-columns: repeat(16, [col-start] 1fr);
+    gap: 30px;
+
+}
+
+#Work h1{
+    grid-column: col-start 2 / span 5;
+    padding-left: 34px;
+}
+
+#tldr{
+    grid-column: col-start 6 / span 10;
+    grid-row: 3 / 16;
+    padding-left: 2em;
+
+}
+
+#housebayou{
+    grid-column: col-start 6 / span 10;
+    grid-row: 6 / 16;
+    padding-left: 2em;
+
+}
+
+#pamelas{
+    grid-column: col-start 6 / span 10;
+    grid-row: 9 / 16;
+    padding-left: 2em;
+
+}
+
+#falooda{
+    grid-column: col-start 6 / span 10;
+    grid-row: 12 / 16;
+    padding-left: 2em;
+
+}
+
+
+#tldrphoto {
+    grid-column: col-start 4 / span 3;
+    grid-row: 4 / 16;
+    display:none;
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+#housebayouphoto{
+    grid-column: col-start 4 / span 3;
+    grid-row: 4 / 16;
+    display: none;
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+
+#pamelasphoto{
+    grid-column: col-start 4 / span 2;
+    grid-row: 4 / 16;
+    display: none;
+    width: 510px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+
+#faloodaphoto{
+    grid-column: col-start 4 / span 3;
+    grid-row: 4 / 16;
+    display: none;
+    height: 300px;
+    width: 480px;
+    border-radius: 20px;
+}
+
+
+#pseudoTldr {
+    grid-column: col-start 3 / span 3;
+    grid-row: 4 / 16;
+    visibility: hidden;
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+
+}
+
+#pseudoHouseBayou{
+    grid-column: col-start 3 / span 3;
+    grid-row: 4 / 16;
+    visibility: hidden;
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+
+#pseudoPamelas{
+    grid-column: col-start 3 / span 2;
+    grid-row: 4 / 16;
+    visibility: hidden;
+    width: 510px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+
+#psuedoFalooda{
+    grid-column: col-start 3 / span 3;
+    grid-row: 3 / 16;
+    visibility: hidden;
+    height: 300px;
+    width: 480px;
+    border-radius: 20px;
+}
+
+}
+
+@media (min-width: 1001px) and (max-width: 1049px) {
 
     #Work{
     display: grid;
@@ -128,25 +451,25 @@ body{
 }
 
 #tldr{
-    grid-column: col-start 7 / span 9;
+    grid-column: col-start 6 / span 9;
     grid-row: 3 / 16;
 
 }
 
 #housebayou{
-    grid-column: col-start 7 / span 9;
+    grid-column: col-start 6 / span 9;
     grid-row: 6 / 16;
 
 }
 
 #pamelas{
-    grid-column: col-start 7 / span 9;
+    grid-column: col-start 6 / span 9;
     grid-row: 9 / 16;
 
 }
 
 #falooda{
-    grid-column: col-start 7 / span 9;
+    grid-column: col-start 6 / span 9;
     grid-row: 12 / 16;
 
 }
@@ -192,128 +515,6 @@ body{
     border-radius: 20px;
 }
 
-
-#pseudoTldr {
-    grid-column: col-start 4 / span 3;
-    grid-row: 4 / 16;
-    visibility: hidden;
-    width: 500px;
-    height: 300px;
-    border-radius: 20px;
-}
-
-#pseudoHouseBayou{
-    grid-column: col-start 4 / span 3;
-    grid-row: 4 / 16;
-    visibility: hidden;
-    width: 500px;
-    height: 300px;
-    border-radius: 20px;
-}
-
-
-#pseudoPamelas{
-    grid-column: col-start 4 / span 2;
-    grid-row: 4 / 16;
-    visibility: hidden;
-    width: 510px;
-    height: 300px;
-    border-radius: 20px;
-}
-
-
-#psuedoFalooda{
-    grid-column: col-start 4 / span 3;
-    grid-row: 3 / 16;
-    visibility: hidden;
-    height: 300px;
-    width: 480px;
-    border-radius: 20px;
-}
-
-}
-
-/* large screen */
-
-@media screen and (min-width: 990px) and (max-width: 1049px) {
-
-    #Work{
-    display: grid;
-    grid-template-columns: repeat(16, [col-start] 1fr);
-    gap: 30px;
-
-}
-
-#Work h1{
-    grid-column: col-start 2 / span 5;
-    padding-left:34px;
-}
-
-#tldr{
-    grid-column: col-start 6 / span 9;
-    grid-row: 3 / 16;
-
-}
-
-#housebayou{
-    grid-column: col-start 6 / span 9;
-    grid-row: 6 / 16;
-
-}
-
-#pamelas{
-    grid-column: col-start 6 / span 9;
-    grid-row: 9 / 16;
-
-}
-
-#falooda{
-    grid-column: col-start 6 / span 9;
-    grid-row: 12 / 16;
-
-}
-
-
-
-
-#tldrphoto {
-    grid-column: col-start 4 / span 3;
-    grid-row: 4 / 16;
-    display:none;
-    width: 500px;
-    height: 300px;
-    border-radius: 20px;
-}
-
-#housebayouphoto{
-    grid-column: col-start 4 / span 3;
-    grid-row: 4 / 16;
-    display: none;
-    width: 500px;
-    height: 300px;
-    border-radius: 20px;
-}
-
-
-#pamelasphoto{
-    grid-column: col-start 4 / span 2;
-    grid-row: 4 / 16;
-    display: none;
-    width: 510px;
-    height: 300px;
-    border-radius: 20px;
-}
-
-
-#faloodaphoto{
-    grid-column: col-start 4 / span 3;
-    grid-row: 3 / 16;
-    display: none;
-    height: 300px;
-    width: 480px;
-    border-radius: 20px;
-}
-
 }
 
 #pseudoTldr {
@@ -355,9 +556,7 @@ body{
 }
 
 
-/* medium screen */
-
-@media screen and (min-width: 830px) and (max-width: 989px){
+@media (min-width: 890px) and (max-width: 1000px){
 
     #Work{
     display: grid;
@@ -438,13 +637,11 @@ body{
 
 }
 
-/* small screen */
-
-@media screen and (max-width: 829px){
+@media (max-width: 889px){
 
 #Work{
     display: grid;
-    grid-template-columns: repeat(16, [col-start] 1fr);
+    grid-template-columns: repeat(16, [col-start] minmax(0, 1fr));
     gap: 30px;
 
 }
@@ -456,25 +653,25 @@ body{
 }
 
 #tldr{
-    grid-column: col-start 3 / span 10;
+    grid-column: col-start 3 / span 12;
     grid-row: 7 / 16;
 
 }
 
 #housebayou{
-    grid-column: col-start 3 / span 9;
+    grid-column: col-start 3 / span 12;
     grid-row: 10 / 16;
 
 }
 
 #pamelas{
-    grid-column: col-start 3 / span 9;
+    grid-column: col-start 3 / span 12;
     grid-row: 13 / 18;
 
 }
 
 #falooda{
-    grid-column: col-start 3 / span 9;
+    grid-column: col-start 3 / span 12;
     grid-row: 16 / 17;
 
 }
@@ -570,10 +767,38 @@ body{
 
 }
 
+#aboutHeadings h1{
+    font-family: "EB Garamond";
+    color:#434343;
+    font-size: 3.5em;
+    font-weight:normal;
+}
+
+#aboutHeadings p{
+    font-family: "Roboto Mono";
+    color:#434343;
+    font-size: 1em;
+}
+
+#catCaption {
+    font-family: "Roboto Mono";
+    color:#434343;
+    font-size: .8em;
+
+}
+
 @media (min-width: 701px) {
 
 #aboutHeadings h1{
-    padding-left: 3em;
+    padding-left: 2em;
+    flex-grow: 1;
+
+}
+
+#aboutHeadings p{
+    padding-top: 7em;
+    flex-grow: .13;
+
 }
 
 }
@@ -581,22 +806,52 @@ body{
 @media (max-width: 700px) {
 
     #aboutHeadings h1{
-        padding-left: 2.2em;
+        padding-left: 1em;
+        flex-grow: 1;
+    }
+
+    #aboutHeadings p{
+        padding-top: 7em;
+        flex-grow: 1;
+    
     }
     
     }
 
 
-#aboutHeadings p{
-    padding-top: 5em;
-}
+
+
+@media (min-width: 2001px) {
+
+
+    #gallery{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    
+    #gallery img{
+        border-radius:30px;
+        object-fit: cover;
+        vertical-align: middle;
+        width: 10%;
+        align-self: center;
+    }
+    
+    }
+
+@media (min-width: 650px) and (max-width: 2000px) {
+
 
 #gallery{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 
@@ -607,7 +862,28 @@ body{
     width: 20%;
 }
 
+}
 
+@media (max-width: 649px) {
+
+
+    #gallery{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    
+    #gallery img{
+        border-radius:20px;
+        object-fit: cover;
+        vertical-align: middle;
+        width: 35%;
+    }
+    
+    }
 
 #selfie{
     width: 235px;
@@ -674,6 +950,20 @@ body{
     padding-top: 140px;
 }
 
+#bio h2{
+    font-family: "EB Garamond";
+    font-size: 2.3em;
+    font-weight:10;
+}
+
+#bio p{
+    font-family: "Roboto Mono";
+    font-size: .86em;
+    line-height: 1.35;
+}
+
+@media (min-width: 701px) {
+
 h2.background{
     grid-column: col-start 2 / span 5;
     grid-row: 1 / 8;
@@ -694,25 +984,88 @@ h2.favorites{
 p.background{
     grid-column: col-start 8 / span 8;
     display: none;
-    grid-row: 1 / span 8;
+    grid-row: 2 / 10;
 }
 
 p.current{
     grid-column: col-start 8 / span 8;
-    grid-row: 2 / span 8;
+    grid-row: 3 / 10;
     display: none;
 
 }
 
 p.favorites{
     grid-column: col-start 8 / span 8;
-    grid-row: 4 / 9;
+    grid-row: 5 / 10;
     display: none;
 }
 
+}
+
+@media (max-width: 700px) {
+
+    h2.background{
+        grid-column: col-start 2 / span 5;
+        grid-row: 1 / 8;
+    }
+    
+    h2.current{
+        grid-column: col-start 2 / span 5;
+        grid-row: 7 / 8;
+    
+    }
+    
+    h2.favorites{
+        grid-column: col-start 2 / span 5;
+        grid-row: 8 / 9;
+    
+    }
+
+    p.background{
+        grid-column: col-start 8 / span 8;
+        display: none;
+        grid-row: 3 / 8;
+    }
+    
+    p.current{
+        grid-column: col-start 8 / span 8;
+        grid-row: 7 / 8;
+        display: none;
+    
+    }
+    
+    p.favorites{
+        grid-column: col-start 8 / span 8;
+        grid-row: 8 / 8;
+        display: none;
+    }
+    
+    
+    }
+
 
 /* footer */
-@media (min-width: 750px) {
+
+#siteInfo{
+    font-family: "EB Garamond";
+    font-style: italic;
+}
+
+
+thead{
+    font-family: "EB Garamond";
+    font-style:italic;
+    font-size: 1.6em;
+    font-weight: 100;
+    line-height: 2.1;
+}
+
+tbody{
+    font-family: "Roboto Mono";
+    font-size: .9em;
+}
+
+@media (min-width: 790px) {
     footer{
         display: flex;
         flex-direction: row;
@@ -721,12 +1074,12 @@ p.favorites{
     }
     
     #siteInfo{
-        padding-left: 6em;
+        padding-left: 5em;
     }    
 
 }
 
-@media (max-width: 749px) {
+@media (max-width: 789px) {
     footer{
         display: flex;
         flex-direction: column;
