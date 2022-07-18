@@ -691,25 +691,25 @@ a:active {
 
 #tldr{
     grid-column: col-start 3 / span 12;
-    grid-row: 7 / 16;
+    grid-row: 7 / 18;
 
 }
 
 #housebayou{
     grid-column: col-start 3 / span 12;
-    grid-row: 10 / 16;
+    grid-row: 11 / 18;
 
 }
 
 #pamelas{
     grid-column: col-start 3 / span 12;
-    grid-row: 13 / 18;
+    grid-row: 15 / 18;
 
 }
 
 #falooda{
     grid-column: col-start 3 / span 12;
-    grid-row: 16 / 17;
+    grid-row: 18 / 18;
 
 }
 
