@@ -26,13 +26,14 @@
 
     <main> 
         <div id="Home"> 
-            <p>Hi there, I’m <em>Phyllis</em>.<br>
-            A sophomore studying Information 
-            Systems at Carnegie Mellon University, 
+            <p>Hi there, I’m <span id="highlightName"><a href="#about"><em>Phyllis</em></a></span>
+            .<br> A sophomore studying <span id="underlineIS"><a href="https://www.cmu.edu/information-systems"
+            target="_blank">Information Systems</a></span> at Carnegie Mellon University, 
             I’m curious about how to design 
             effortless, accessible products with bold 
-            personalities. Join me as I dive in — oh,
-            and wade through some code. 
+            personalities. <span id="yellowCircle"><a href="#Work">Join me</a></span>as I dive in — oh,
+            and wade through some code.    
+            <img src="images/pinkstar.svg" width="35" alt="">
             </p>
         </div>
 
@@ -51,19 +52,19 @@
             <img id="psuedoFalooda" src="images/falooda.png" alt = "" />  
             <div id="tldr">
                 <h2>TL;DR</h2>
-                <p>Term project for Fund. of Programming and Computer Science</p>
+                <p><span class="yellowUnderline">Term project</span> for Fund. of Programming and Computer Science</p>
             </div>
             <div id="housebayou">
                 <h2>House Bayou</h2>
-                <p>Client project under re:Bloom digital agency</p>
+                <p><span id="greenHighlight">Client project</span> under re:Bloom digital agency</p>
             </div>
             <div id="pamelas">
                 <h2>Pamela’s Diner</h2>
-                <p>Web development project for Information Systems Milieux</p>
+                <p>Web development project for <span class="yellowUnderline">Information Systems Milieux</span></p>
             </div>
             <div id="falooda">
                 <h2>Big Straw Magazine</h2>
-                <p>Article layouts designed for Big Straw Magazine</p>
+                <p><span id="pinkCircle">Article layouts</span>designed for Big Straw Magazine</p>
             </div>
         </div>
 
@@ -71,8 +72,10 @@
 
         <div id="about">
             <div id="aboutHeadings">
-                <h1><em>About</em></h1>
-                <p> My life in Pittsburgh, PA</p>
+                <h1 style="flex-grow: 1"><em>About</em></h1>
+                <p style="flex-grow: .3"><svg width="290px" height="125px">
+                    <line x1="10" x2="270" y1="120" y2="120" stroke="#ea9999" stroke-width="5" stroke-linecap="round" stroke-dasharray="1, 10"/>
+                    </svg>My life in Pittsburgh, PA</p>
             </div>
             <div id="gallery">
                     <img id="selfie" src="images/selfie.jpg" alt = "" />
@@ -89,7 +92,7 @@
                 <p style="flex-grow: .13"><em>Look closer — there's a cat :)</em></p>
             </div>
             <div id="bio">
-                <h2 class="background">How I got here</h2>
+                <h2 class="background"> <img src="images/greenstar.svg" width="29" alt=""><a> How I got here</a></h2>
                 <p class="background">  Born in Tallahassee, Florida, and raised in Dayton, Ohio, I grew up 
                     reading and writing with my head in the clouds. But while there 
                     was much magic to be found in books, I quickly became engaged 
@@ -105,7 +108,7 @@
                     design, and advocacy intersected. This led me to my major, Information 
                     Systems, which represents the kind of human-centric, forward-thinking 
                     work I’ve always wanted to pursue.</p>
-                <h2 class="current">What I’m up to now</h2>
+                <h2 class="current"> <img src="images/goldstar.svg" width="29" alt=""><a> What I’m up to now</a></h2>
                 <p class="current">Currently, I’m a layout designer and writer for Carnegie Mellon’s 
                     sole Asian-focused publication, Big Straw Magazine, as well as a 
                     member of Women in IS. This summer, I’m busy with my client project 
@@ -115,7 +118,7 @@
                     Speaking of books, I just finished A Tale for the Time Being by 
                     Ruth Ozeki! As for TV, I’ve been watching Moon Knight from the 
                     Marvel Universe — I have a soft spot for Egyptian mythology. </p>
-                <h2 class="favorites">Some favorite things</h2>
+                <h2 class="favorites"> <img src="images/pinkstar.svg" width="29" alt=""><a>  Some favorite things</a></h2>
                 <p class="favorites">Woodwick candles; boba and chai tea; visiting cat cafes; fluffy blankets; 
                     every pasta imaginable; spicy salmon rolls; cute brunch places; 
                     sunsets after storms; turning off the alarm; antics with friends; 
@@ -129,12 +132,11 @@
     <footer>  
         <table id="siteInfo" style="flex-grow: 7" cell-spacing="0">
             <tr>
-                <td>© 2022 by Phyllis Feng</td>
-            </tr>
-            <tr>
-                <td>develope and designed from scratch</td>
+                <td>© 2022 by Phyllis Feng<br>
+                    developed and designed from scratch</td>
             </tr>
         </table>
+        <span id="blueCircle">
         <table id="footer" style="flex-grow: 1">
             <thead>
                 <tr>
@@ -149,10 +151,11 @@
                     <td style="width:20px"><a id="linkedInLogo" href="https://www.linkedin.com/in/phyllisfeng/" target="blank"><img src="images/linkedin.png" width="20" alt=""/></a></td>
                     <td style="width:20px"><a id="linkedIn" href="https://www.linkedin.com/in/phyllisfeng/" target="blank">LinkedIn</a></td>
                     <td style="width:20px"><a id="instagramLogo" href="https://www.instagram.com/phyllis.feng/?hl=en" target="blank"><img src="images/instagram.png" width="20" alt=""/></a></td>
-                    <td style="width:100px" ><a id="instagram" href="https://www.instagram.com/phyllis.feng/?hl=en" target="blank">Instagram</a></td>
+                    <td style="width:30px" ><a id="instagram" href="https://www.instagram.com/phyllis.feng/?hl=en" target="blank">Instagram</a></td>
                 </tr>
             </tbody>
         </table>
+        </span>
     </footer>
 
     <br><br><br>
