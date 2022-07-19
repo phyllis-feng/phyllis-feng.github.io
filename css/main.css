@@ -193,21 +193,6 @@ a:active {
     font-weight: normal;
 }
 
-#Work h2{
-    font-family: "EB Garamond";
-    color:#434343;
-    font-size: 2em;
-    font-weight: 100;
-    line-height: .3;
-}
-
-#Work p{
-    font-family: "Roboto Mono";
-    color:#434343;
-    font-size: 1em;
-    font-weight:100;
-}
-
 #greenHighlight{
     background: linear-gradient(180deg,rgba(255,255,255,0) 50%,rgba(56, 118, 29, .3)
     50%);
@@ -228,6 +213,21 @@ a:active {
 
 
 @media (min-width: 2001px) {
+
+    #Work h2{
+        font-family: "EB Garamond";
+        color:#434343;
+        font-size: 2em;
+        font-weight: 100;
+        line-height: .3;
+    }
+
+    #Work p{
+        font-family: "Roboto Mono";
+        color:#434343;
+        font-size: 1em;
+        font-weight:100;
+    }
 
     #Work{
         display: grid;
@@ -350,18 +350,35 @@ a:active {
    
 }
 
+/* start here */
+
 @media (min-width: 1050px) and (max-width: 2000px) {
 
 #Work{
     display: grid;
     grid-template-columns: repeat(16, [col-start] 1fr);
-    gap: 30px;
+    gap: 30px; 
 
+}
+
+#Work h2{
+    font-family: "EB Garamond";
+    color:#434343;
+    font-size: 2em;
+    font-weight: 100;
+    line-height: .3;
+}
+
+#Work p{
+    font-family: "Roboto Mono";
+    color:#434343;
+    font-size: 1em;
+    font-weight:100;
 }
 
 #Work h1{
     grid-column: col-start 2 / span 5;
-    padding-left: 34px;
+    padding-left: 34px; 
 }
 
 #tldr{
@@ -385,12 +402,12 @@ a:active {
 
 }
 
-#falooda{
+ #falooda{
     grid-column: col-start 6 / span 10;
     grid-row: 12 / 16;
     padding-left: 2em;
 
-}
+} 
 
 
 #tldrphoto {
@@ -475,11 +492,26 @@ a:active {
 
 @media (min-width: 1001px) and (max-width: 1049px) {
 
-    #Work{
+#Work{
     display: grid;
     grid-template-columns: repeat(16, [col-start] 1fr);
     gap: 30px;
 
+}
+
+#Work h2{
+    font-family: "EB Garamond";
+    color:#434343;
+    font-size: 2em;
+    font-weight: 100;
+    line-height: .3;
+}
+
+#Work p{
+    font-family: "Roboto Mono";
+    color:#434343;
+    font-size: 1em;
+    font-weight:100;
 }
 
 #Work h1{
@@ -595,11 +627,26 @@ a:active {
 
 @media (min-width: 890px) and (max-width: 1000px){
 
-    #Work{
+#Work{
     display: grid;
     grid-template-columns: repeat(16, [col-start] 1fr);
     gap: 30px;
 
+}
+
+#Work h2{
+    font-family: "EB Garamond";
+    color:#434343;
+    font-size: 2em;
+    font-weight: 100;
+    line-height: .3;
+}
+
+#Work p{
+    font-family: "Roboto Mono";
+    color:#434343;
+    font-size: 1em;
+    font-weight:100;
 }
 
 #Work h1{
@@ -676,6 +723,21 @@ a:active {
 
 @media (max-width: 889px){
 
+#Work h2{
+        font-family: "EB Garamond";
+        color:#434343;
+        font-size: 2em;
+        font-weight: 100;
+        line-height: .3;
+}
+
+#Work p{
+        font-family: "Roboto Mono";
+        color:#434343;
+        font-size: 1em;
+        font-weight:100;
+}
+
 #Work{
     display: grid;
     grid-template-columns: repeat(16, [col-start] minmax(0, 1fr));
@@ -686,37 +748,37 @@ a:active {
 #Work h1{
     grid-column: col-start 2 / span 5;
     padding-left: 34px;
-    grid-row: 1;
+    grid-row: 1 / 18;
 }
 
 #tldr{
-    grid-column: col-start 3 / span 12;
-    grid-row: 7 / 18;
+    grid-column: col-start 3 / span 10;
+    grid-row: 10 / 21;
 
 }
 
 #housebayou{
-    grid-column: col-start 3 / span 12;
-    grid-row: 11 / 18;
+    grid-column: col-start 3 / span 10;
+    grid-row: 14 / 21;
 
 }
 
 #pamelas{
-    grid-column: col-start 3 / span 12;
-    grid-row: 15 / 18;
+    grid-column: col-start 3 / span 10;
+    grid-row: 17 / 21;
 
 }
 
 #falooda{
-    grid-column: col-start 3 / span 12;
-    grid-row: 18 / 18;
+    grid-column: col-start 3 / span 10;
+    grid-row: 20 / 21;
 
 }
 
 
 #tldrphoto {
     grid-column: col-start 4 / span 3;
-    grid-row: 2 / 16;
+    grid-row: 5 / 16;
     display:none;
     width: 230px;
     height: 140px;
@@ -725,7 +787,7 @@ a:active {
 
 #housebayouphoto{
     grid-column: col-start 4 / span 3;
-    grid-row: 2 / 16;
+    grid-row: 5 / 16;
     display: none;
     width: 230px;
     height: 140px;
@@ -735,7 +797,7 @@ a:active {
 
 #pamelasphoto{
     grid-column: col-start 4 / span 2;
-    grid-row: 2 / 16;
+    grid-row: 5 / 16;
     display: none;
     width: 240px;
     height: 140px;
@@ -745,7 +807,7 @@ a:active {
 
 #faloodaphoto{
     grid-column: col-start 4 / span 3;
-    grid-row: 2 / 16;
+    grid-row: 5 / 16;
     display: none;
     height: 140px;
     width: 230px;
@@ -755,7 +817,7 @@ a:active {
 
 #pseudoTldr {
     grid-column: col-start 4 / span 3;
-    grid-row: 2 / 16;
+    grid-row: 5 / 16;
     visibility: hidden;
     width: 500px;
     height: 300px;
@@ -764,7 +826,7 @@ a:active {
 
 #pseudoHouseBayou{
     grid-column: col-start 4 / span 3;
-    grid-row: 2 / 16;
+    grid-row: 5 / 16;
     visibility: hidden;
     width: 500px;
     height: 300px;
@@ -774,7 +836,7 @@ a:active {
 
 #pseudoPamelas{
     grid-column: col-start 4 / span 2;
-    grid-row: 2 / 16;
+    grid-row: 5 / 16;
     visibility: hidden;
     width: 510px;
     height: 300px;
@@ -784,7 +846,7 @@ a:active {
 
 #psuedoFalooda{
     grid-column: col-start 4 / span 3;
-    grid-row: 2 / 16;
+    grid-row: 5 / 16;
     visibility: hidden;
     height: 300px;
     width: 480px;
