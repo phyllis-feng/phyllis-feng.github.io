@@ -1122,6 +1122,7 @@ p.favorites{
     h2.favorites{
         grid-column: col-start 2 / span 5;
         grid-row: 8 / 9;
+        margin-top: -.8em;
     
     }
 
@@ -1169,6 +1170,14 @@ tbody{
     color: #434343;
 }
 
+#emailLogo{
+    margin-left: 2em;
+}
+
+#linkedInLogo{
+    margin-left: 1em;
+}
+
 @media (min-width: 790px) {
     footer{
         display: flex;
@@ -1214,17 +1223,17 @@ tbody{
     }
 
     #footer{
-        padding-left: 1em;
+        padding-left: -1em;
         padding-right: 2em;
         padding-top: 2em;
     }
 
     thead{
-        font-size: 1em;
+        font-size: 1.1em;
     }
 
     tbody{
-        font-size: .5em;
+        font-size: .6em;
     }
     
     #siteInfo{
