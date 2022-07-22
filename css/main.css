@@ -756,25 +756,26 @@ a:active {
 
 #tldr{
     grid-column: col-start 3 / span 10;
-    grid-row: 10 / 21;
+    grid-row: 10 / 22;
 
 }
 
 #housebayou{
     grid-column: col-start 3 / span 10;
-    grid-row: 14 / 21;
+    grid-row: 14 / 22;
 
 }
 
 #pamelas{
     grid-column: col-start 3 / span 10;
-    grid-row: 17 / 21;
+    grid-row: 18 / 22;
 
 }
 
 #falooda{
     grid-column: col-start 3 / span 10;
-    grid-row: 20 / 21;
+    grid-row: 22 / 22;
+    margin-top: -1.8em;
 
 }
 
@@ -1158,7 +1159,6 @@ p.favorites{
 thead{
     font-family: "EB Garamond";
     font-style:italic;
-    font-size: 1.6em;
     font-weight: 100;
     line-height: 1.8;
     color: #434343;
@@ -1166,7 +1166,6 @@ thead{
 
 tbody{
     font-family: "Roboto Mono";
-    font-size: .9em;
     color: #434343;
 }
 
@@ -1176,6 +1175,14 @@ tbody{
         flex-direction: row;
         flex-wrap: wrap;
         text-align:left;
+    }
+
+    thead{
+        font-size: 1.6em;
+    }
+
+    tbody{
+        font-size: .9em;
     }
     
     #siteInfo{
@@ -1207,9 +1214,17 @@ tbody{
     }
 
     #footer{
-        padding-left: 2em;
+        padding-left: 1em;
         padding-right: 2em;
         padding-top: 2em;
+    }
+
+    thead{
+        font-size: 1em;
+    }
+
+    tbody{
+        font-size: .5em;
     }
     
     #siteInfo{
@@ -1220,7 +1235,8 @@ tbody{
     #blueCircle{
         border-radius: 50%;
         padding-bottom: 45px;
-        margin: 1em;
+        margin: 0em;
+        margin-top: 2em;
         background: rgba(164, 194, 244, .25);
         text-align: center;
         
