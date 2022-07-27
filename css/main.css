@@ -194,6 +194,11 @@ a:active {
     color:#434343;
     font-size: 3.5em;
     font-weight: normal;
+    opacity: 0;
+}
+
+#tldr, #housebayou, #pamelas, #falooda{
+    opacity: 0;
 }
 
 #greenHighlight{
@@ -862,6 +867,9 @@ a:active {
 
 /* gallery */
 
+#aboutHeadings, #selfie, #brunch, #incline, #mural, #cupcake, #apples, #reflection, #cat, #bio{
+    opacity: 0;
+}
 
 #aboutHeadings{
     display: flex;
@@ -1151,6 +1159,10 @@ p.favorites{
 
 /* footer */
 
+#siteInfo, #footer{
+    opacity: 0;
+}
+
 #siteInfo{
     font-family: "EB Garamond";
     font-style: italic;
@@ -1237,8 +1249,7 @@ tbody{
     }
     
     #siteInfo{
-        padding-left: 2em;
-        padding-right: 2em;
+        padding-left: 4em;
     }    
 
     #blueCircle{

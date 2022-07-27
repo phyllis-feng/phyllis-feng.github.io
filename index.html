@@ -134,7 +134,7 @@
         <table id="siteInfo" style="flex-grow: 7" cell-spacing="0">
             <tr>
                 <td>© 2022 by Phyllis Feng<br>
-                    developed and designed from scratch</td>
+                    developed & designed from scratch</td>
             </tr>
         </table>
         <span id="blueCircle">
@@ -164,63 +164,6 @@
     <script src="js/jquery-3.6.0.min copy.js" type = "text/javascript"></script>
     <script src="js/jquery-ui.min copy.js" type="text/javascript"></script>
     <script src="js/script.js" type="text/javascript"></script>
-    <script>
-        $(document).ready(function () {
-            $('#tldr h2').on('mouseover', function () {
-                $('#tldrphoto').show();
-        }).on('mouseleave', function () {
-                $('#tldrphoto').hide();
-        });
-
-            $('#pamelas h2').on('mouseover', function () {
-                $('#pamelasphoto').show();
-        }).on('mouseleave', function () {
-                $('#pamelasphoto').hide();
-        });
-
-            $('#falooda h2').on('mouseover', function () {
-                $('#faloodaphoto').show();
-        }).on('mouseleave', function () {
-                $('#faloodaphoto').hide();
-        });
-
-            $('#housebayou h2').on('mouseover', function () {
-                $('#housebayouphoto').show();
-        }).on('mouseleave', function () {
-                $('#housebayouphoto').hide();
-        });
-
-            $('h2.background').on('click', function () {
-                $('p.background').show();
-                $('p.current').hide();
-                $('p.favorites').hide()
-        })
-            $('h2.current').on('click', function () {
-                $('p.background').hide();
-                $('p.current').show();
-                $('p.favorites').hide()
-        })
-            $('h2.favorites').on('click', function () {
-                $('p.background').hide();
-                $('p.current').hide();
-                $('p.favorites').show()
-        })
-
-    });;
-
-    $(document).ready(function(){
-    $(window).scroll(function(){
-        if ($(window).scrollTop() > 170){
-            $('#NavBar').addClass( "sticky");  
-        }
-
-        else {
-
-            $('#NavBar').removeClass( "sticky");
-            }
-        });
-    });
-    </script>
 
 </body>
 
