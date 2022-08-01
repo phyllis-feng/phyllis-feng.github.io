@@ -866,7 +866,7 @@ a:active {
 /* gallery */
 
 #aboutHeadings, #selfie, #brunch, #incline, #mural, #cupcake, #apples,
-#reflection, #cat, #catCaption, #bio{
+#reflection, #cat, #catCaption, .background, .current, .favorites{
     opacity: 0;
 }
 
