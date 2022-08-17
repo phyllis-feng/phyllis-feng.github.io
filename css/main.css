@@ -82,27 +82,28 @@ a:active {
             flex-direction: row;
             font-size: .7em;
             align-items: center;
+            padding-top: 2em;
         }
         #HomeName{
             margin-bottom: .5em;
-            margin-left: 4em;
+            margin-left: 3em;
 
         }
 
         #WorkTab{
             margin-bottom: .5em;
-            margin-right: 2em;
+            margin-right: 1em;
 
         }
 
         #AboutTab{
             margin-bottom: .5em;
-            margin-right: 2em;
+            margin-right: 1em;
         }
 
         #ResumeTab{
             margin-bottom: .5em;
-            margin-right: 2em;
+            margin-right: 1em;
         }
 
     }
