@@ -79,22 +79,30 @@ a:active {
         #NavBar {
             background-color: #fffbf3;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             font-size: .7em;
             align-items: center;
         }
         #HomeName{
             margin-bottom: .5em;
+            margin-left: 4em;
 
         }
 
         #WorkTab{
             margin-bottom: .5em;
+            margin-right: 2em;
 
         }
 
         #AboutTab{
             margin-bottom: .5em;
+            margin-right: 2em;
+        }
+
+        #ResumeTab{
+            margin-bottom: .5em;
+            margin-right: 2em;
         }
 
     }
