@@ -1239,11 +1239,11 @@ tbody{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        text-align: left;
+        text-align: center;
     }
 
     #footer{
-        padding-left: -1em;
+        padding-left: -3em;
         padding-right: 2em;
         padding-top: 2em;
     }
@@ -1257,7 +1257,7 @@ tbody{
     }
     
     #siteInfo{
-        padding-left: 4em;
+        padding-left: -2em;
     }    
 
     #blueCircle{
