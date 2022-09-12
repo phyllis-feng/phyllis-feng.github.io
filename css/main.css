@@ -7,7 +7,6 @@ body{
     background-color: #fffbf3;
     padding: 0;
     margin: 0;
-    cursor: url("cursor.png"), auto;
 }
 
 
@@ -23,7 +22,6 @@ a:visited {
   
 a:hover {
     color: #a4c2f4;
-    cursor: url("linkcursor.png"), pointer;
   }
   
 a:active {
@@ -1074,7 +1072,7 @@ a:active {
     font-size: 2.3em;
     font-weight:10;
     color: #434343;
-    cursor: url("linkcursor.png"), pointer;
+    cursor: pointer;
 }
 
 #bio p{
