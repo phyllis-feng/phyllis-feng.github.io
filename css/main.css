@@ -204,7 +204,7 @@ a:active {
     opacity: 0;
 }
 
-#tldr, #housebayou, #pamelas, #falooda{
+#tldr, #housebayou, #pamelas, #falooda, #research{
     opacity: 0;
 }
 
@@ -218,7 +218,7 @@ a:active {
     border-bottom: dotted 4px #bf9000;    ;
 }
 
-#pinkCircle{
+.pinkCircle{
     border-radius: 50%;
     padding: 7px;
     background: #fffbf3;
@@ -255,33 +255,48 @@ a:active {
         grid-column: col-start 2 / span 5;
         padding-left: 34px;
     }
-    
-    #tldr{
-        grid-column: col-start 9 / span 7;
+
+    #research{
+        grid-column: col-start 5 / span 8;
         grid-row: 3 / 16;
-        padding-left: 2em;
-    
+        padding-left: 1em;
     }
     
-    #housebayou{
+    #tldr{
         grid-column: col-start 9 / span 7;
         grid-row: 6 / 16;
         padding-left: 2em;
     
     }
     
-    #pamelas{
+    #housebayou{
         grid-column: col-start 9 / span 7;
         grid-row: 9 / 16;
         padding-left: 2em;
     
     }
     
-    #falooda{
+    #pamelas{
         grid-column: col-start 9 / span 7;
         grid-row: 12 / 16;
         padding-left: 2em;
     
+    }
+    
+    #falooda{
+        grid-column: col-start 9 / span 7;
+        grid-row: 15 / 16;
+        padding-left: 2em;
+    
+    }
+
+    #affinityD{
+        grid-column: col-start 4 / span 3;
+        grid-row: 4 / 16;
+        display:none;
+        width: 500px;
+        height: 300px;
+        border-radius: 20px;
     }
 
     #tldrphoto {
@@ -321,7 +336,6 @@ a:active {
         width: 480px;
         border-radius: 20px;
     }
-    
     
     #pseudoTldr {
         grid-column: col-start 3 / span 3;
@@ -382,6 +396,7 @@ a:active {
     font-size: 2em;
     font-weight: 100;
     line-height: .3;
+    cursor: pointer;
 }
 
 #Work p{
@@ -396,38 +411,52 @@ a:active {
     padding-left: 34px; 
 }
 
-#tldr{
+ #research{
     grid-column: col-start 6 / span 10;
     grid-row: 3 / 16;
     padding-left: 2em;
+} 
 
-}
-
-#housebayou{
+#tldr{
     grid-column: col-start 6 / span 10;
     grid-row: 6 / 16;
     padding-left: 2em;
 
 }
 
-#pamelas{
+#housebayou{
     grid-column: col-start 6 / span 10;
     grid-row: 9 / 16;
     padding-left: 2em;
 
 }
 
- #falooda{
+#pamelas{
     grid-column: col-start 6 / span 10;
     grid-row: 12 / 16;
     padding-left: 2em;
 
+}
+
+ #falooda{
+    grid-column: col-start 6 / span 10;
+    grid-row: 15 / 16;
+    padding-left: 2em;
+
 } 
 
+#affinityD{
+    grid-column: col-start 4 / span 3;
+    grid-row: 6 / 16;
+    display:none;
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+} 
 
 #tldrphoto {
     grid-column: col-start 4 / span 3;
-    grid-row: 4 / 16;
+    grid-row: 6 / 16;
     display:none;
     width: 500px;
     height: 300px;
@@ -436,7 +465,7 @@ a:active {
 
 #housebayouphoto{
     grid-column: col-start 4 / span 3;
-    grid-row: 4 / 16;
+    grid-row: 6 / 16;
     display: none;
     width: 500px;
     height: 300px;
@@ -446,7 +475,7 @@ a:active {
 
 #pamelasphoto{
     grid-column: col-start 4 / span 2;
-    grid-row: 4 / 16;
+    grid-row: 6 / 16;
     display: none;
     width: 510px;
     height: 300px;
@@ -456,15 +485,14 @@ a:active {
 
 #faloodaphoto{
     grid-column: col-start 4 / span 3;
-    grid-row: 4 / 16;
+    grid-row: 6 / 16;
     display: none;
     height: 300px;
     width: 480px;
     border-radius: 20px;
 }
 
-
-#pseudoTldr {
+/* #pseudoTldr {
     grid-column: col-start 3 / span 3;
     grid-row: 4 / 16;
     visibility: hidden;
@@ -472,19 +500,19 @@ a:active {
     height: 300px;
     border-radius: 20px;
 
-}
+} */
 
-#pseudoHouseBayou{
+/* #pseudoHouseBayou{
     grid-column: col-start 3 / span 3;
     grid-row: 4 / 16;
     visibility: hidden;
     width: 500px;
     height: 300px;
     border-radius: 20px;
-}
+} */
 
 
-#pseudoPamelas{
+/* #pseudoPamelas{
     grid-column: col-start 3 / span 2;
     grid-row: 4 / 16;
     visibility: hidden;
@@ -501,7 +529,7 @@ a:active {
     height: 300px;
     width: 480px;
     border-radius: 20px;
-}
+} */
 
 }
 
@@ -534,36 +562,49 @@ a:active {
     padding-left:34px;
 }
 
-#tldr{
+#research{
     grid-column: col-start 6 / span 9;
     grid-row: 3 / 16;
 
 }
 
-#housebayou{
+#tldr{
     grid-column: col-start 6 / span 9;
     grid-row: 6 / 16;
 
 }
 
-#pamelas{
+#housebayou{
     grid-column: col-start 6 / span 9;
     grid-row: 9 / 16;
 
 }
 
-#falooda{
+#pamelas{
     grid-column: col-start 6 / span 9;
     grid-row: 12 / 16;
 
 }
 
+#falooda{
+    grid-column: col-start 6 / span 9;
+    grid-row: 15 / 16;
+
+}
 
 
+#affinityD{
+    grid-column: col-start 4 / span 3;
+    grid-row: 6 / 16;
+    display:none;
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+}
 
 #tldrphoto {
     grid-column: col-start 4 / span 3;
-    grid-row: 4 / 16;
+    grid-row: 6 / 16;
     display:none;
     width: 500px;
     height: 300px;
@@ -572,7 +613,7 @@ a:active {
 
 #housebayouphoto{
     grid-column: col-start 4 / span 3;
-    grid-row: 4 / 16;
+    grid-row: 6 / 16;
     display: none;
     width: 500px;
     height: 300px;
@@ -582,7 +623,7 @@ a:active {
 
 #pamelasphoto{
     grid-column: col-start 4 / span 2;
-    grid-row: 4 / 16;
+    grid-row: 6 / 16;
     display: none;
     width: 510px;
     height: 300px;
@@ -592,7 +633,7 @@ a:active {
 
 #faloodaphoto{
     grid-column: col-start 4 / span 3;
-    grid-row: 3 / 16;
+    grid-row: 5 / 16;
     display: none;
     height: 300px;
     width: 480px;
@@ -669,32 +710,45 @@ a:active {
     padding-left:34px;
 }
 
-#tldr{
+#research{
     grid-column: col-start 5 / span 9;
     grid-row: 3 / 16;
 
 }
 
-#housebayou{
+#tldr{
     grid-column: col-start 5 / span 9;
     grid-row: 6 / 16;
 
 }
 
-#pamelas{
+#housebayou{
     grid-column: col-start 5 / span 9;
     grid-row: 9 / 16;
 
 }
 
-#falooda{
+#pamelas{
     grid-column: col-start 5 / span 9;
     grid-row: 12 / 16;
 
 }
 
+#falooda{
+    grid-column: col-start 5 / span 9;
+    grid-row: 15 / 16;
+
+}
 
 
+#affinityD {
+    grid-column: col-start 4 / span 3;
+    grid-row: 7 / 16;
+    display:none;
+    width: 230px;
+    height: 140px;
+    border-radius: 20px;
+}
 
 #tldrphoto {
     grid-column: col-start 4 / span 3;
@@ -766,31 +820,45 @@ a:active {
     grid-row: 1 / 18;
 }
 
+#research{
+    grid-column: col-start 3 / span 10;
+    grid-row: 10 / 23;
+
+}
+
 #tldr{
     grid-column: col-start 3 / span 10;
-    grid-row: 10 / 22;
+    grid-row: 14 / 23;
 
 }
 
 #housebayou{
     grid-column: col-start 3 / span 10;
-    grid-row: 14 / 22;
+    grid-row: 18 / 23;
 
 }
 
 #pamelas{
     grid-column: col-start 3 / span 10;
-    grid-row: 18 / 22;
+    grid-row: 22 / 23;
 
 }
 
 #falooda{
     grid-column: col-start 3 / span 10;
-    grid-row: 22 / 22;
+    grid-row: 23 / 23;
     margin-top: -1.8em;
 
 }
 
+#affinityD {
+    grid-column: col-start 4 / span 3;
+    grid-row: 5 / 16;
+    display:none;
+    width: 230px;
+    height: 140px;
+    border-radius: 20px;
+}
 
 #tldrphoto {
     grid-column: col-start 4 / span 3;

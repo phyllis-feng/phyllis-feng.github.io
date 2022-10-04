@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    $('#research h2').on('mouseover', function () {
+        $('#affinityD').show();
+}).on('mouseleave', function () {
+        $('#affinityD').hide();
+});
     $('#tldr h2').on('mouseover', function () {
         $('#tldrphoto').show();
 }).on('mouseleave', function () {
@@ -58,7 +63,7 @@ else {
 
 $(document).ready(function() {
     $(window).scroll( function(){
-        $('#Work h1, #tldr, #housebayou, #pamelas, #falooda, #aboutHeadings,\
+        $('#Work h1, #research, #tldr, #housebayou, #pamelas, #falooda, #aboutHeadings,\
         #selfie, #brunch, #incline, #mural, #cupcake, #apples, #reflection, #cat,\
         #catCaption, .background, .current, .favorites, #siteInfo, #footer').each( function(i){
             
