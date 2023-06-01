@@ -42,7 +42,13 @@ a:active {
     font-weight: bolder;
 
 }
-    
+
+#new{
+    font-family: "Roboto Mono";
+    font-size: 1em; 
+    padding-left: 5em;
+    padding-top: 1em;
+}
 
 
     @media (min-width: 701px){
@@ -169,7 +175,7 @@ a:active {
         font-size: 2.8em;
         padding-left: 2em;
         padding-right: 12.3em;
-        padding-top: 4.2em;
+        padding-top: 2.2em;
         line-height: 1.20;
     }
 }
